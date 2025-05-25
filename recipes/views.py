@@ -1,8 +1,8 @@
 from django.http import HttpResponse
-# from django.shortcuts import render
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse('<h1>Página Inicial Django</h1>')
+    return render(request, 'recipes/home.html')
 
 def sobre(request):
     return HttpResponse ('<h2>Sobre</h2>')
